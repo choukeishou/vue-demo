@@ -1,8 +1,9 @@
 # my-project
 
-> vue个人学习demo，使用vue-li + vue-router + elementUi开发 
-> 模仿网易云音乐网页版界面开发
-> 使用i18n兼容中英文开发
+1. vue个人学习demo，使用vue-li + vue-router + elementUi开发 
+2. 模仿网易云音乐网页版界面开发
+3. 使用i18n兼容中英文切换
+4. 8月4号创建，不定期更新
 
 ## Build Setup
 
