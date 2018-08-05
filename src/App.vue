@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header-nav></header-nav>
-    <img src="./assets/logo.png">
+    <img src="./assets/img/logo.png">
     <router-view></router-view>
     <!-- <p>{{$t("lang")}}</p>
     <h1>{{ msg }}</h1>
@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -62,5 +66,6 @@ li {
 
 a {
   color: #42b983;
+  text-decoration: none;
 }
 </style>

@@ -1,24 +1,30 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import home from '../../components/home.vue';//首页
+import Vue from 'vue';
+import Router from 'vue-router';
+import discover from '../../components/discover.vue';//发现音乐
+import myMusic from '../../components/myMusic/myMusic';//我的音乐,不带后缀也可以识别的
 import notFound from '../../components/notFound/notFound.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
       path: '/',
-      redirect:'/home'
+      component: discover
     },
     {//首页
-        path: '/home',
-        name: 'home',
-        component: home
-      },{
-          path:'*',
-          name:'notFound',
-          component:notFound
-      }
+      path: '/discover',
+      name: 'discover',
+      component: discover
+    }, {
+      path: '/my',
+      name: 'my',
+      component: myMusic
+    },
+    {
+      path: '*',
+      name: 'notFound',
+      component: notFound
+    }
   ]
-})
+});

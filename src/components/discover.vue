@@ -1,11 +1,11 @@
 <template>
-    <div id="home">
-        {{$t("home")}}
+    <div id="discover">
+        {{$t("discover")}}
     </div>
 </template>
 <script>
     export default {
-        name: "home",
+        name: "discover",
         data() {
             return {
                 msg: "Welcome to Your Vue.js App"
