@@ -3,7 +3,7 @@
         <!-- html中写国际化 -->
         <!-- <span>{{$t('notFound')}}</span> -->
         <p v-text="notFoundMessage"></p>
-        <router-link to="/home">返回首页</router-link>
+        <router-link to="/">返回首页</router-link>
     </div>
 </template>
 <script>

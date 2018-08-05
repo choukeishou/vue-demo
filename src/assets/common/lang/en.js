@@ -9,6 +9,14 @@ export default {
         "zh_cn":"Chinese",
         "en_us":"English"
     },
-    "discover":"discover",
+    'discover':{
+        "discover":"discover",
+        'recommed':'recommed',
+        'toplist':'toplist',
+        'playlist':'playlist',
+        'djradio':'djradio',
+        'artist':'artist',
+        'album':'album'
+    },
     "notFound":"aiya！找遍整个宇宙都没能找到你要的页面。您可以"
 }

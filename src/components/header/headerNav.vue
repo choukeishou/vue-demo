@@ -3,7 +3,7 @@
         <div class="clearfix content">
           <div class="pull-left clearfix">
             <h1 class="logo pull-left" title="网易云音乐">
-              <router-link :to="'/'">{{$t("headers.product")}}</router-link>
+              <router-link :to="'/discover'">{{$t("headers.product")}}</router-link>
             </h1>
             <el-menu :default-active="activeId" mode="horizontal" class="pull-left" router>
               <el-menu-item v-for="(item,i) in navList" :key="i" :index="item.name">

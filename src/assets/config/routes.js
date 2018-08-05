@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import discover from '../../components/discover.vue';//发现音乐
+import discover from '../../components/discover/discover.vue';//发现音乐
 import myMusic from '../../components/myMusic/myMusic';//我的音乐,不带后缀也可以识别的
 import notFound from '../../components/notFound/notFound.vue';
 
@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: discover
+      redirect: '/discover'
     },
     {//首页
       path: '/discover',
