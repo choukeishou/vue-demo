@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <header-nav></header-nav>
     <img src="./assets/logo.png">
     <router-view></router-view>
     <!-- <p>{{$t("lang")}}</p>
@@ -22,8 +23,10 @@
 </template>
 
 <script>
+import headerNav from './components/header/headerNav.vue';
 export default {
   name: "app",
+  components:{headerNav},
   data() {
     return {
       msg: "Welcome to Your Vue.js App"
@@ -39,7 +42,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  // margin-top: 60px;
 }
 
 h1,

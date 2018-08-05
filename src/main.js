@@ -1,5 +1,8 @@
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
+import enLocale from 'element-ui/lib/locale/lang/en'
+import zhLocale from 'element-ui/lib/locale/lang/zh-CN'
+import ElementLocale from 'element-ui/lib/locale'
 import zhLang from './assets/common/lang/zh';
 import enLang from './assets/common/lang/en';
 import ElementUI from 'element-ui';
@@ -16,10 +19,11 @@ const i18n = new VueI18n({
   locale:'zh',
   fallbackLocale:'zh',
   messages:{
-    zh:zhLang,
-    en:enLang
+    zh:Object.assign({},zhLocale,zhLang),
+    en:Object.assign({},enLocale,enLang)
   }
 })
+ElementLocale.i18n((key, value) => i18n.t(key, value));//为了实现element插件的多语言切换
 
 new Vue({
   el: '#app',

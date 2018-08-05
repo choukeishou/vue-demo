@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        这是首页页面
+        {{$t("home")}}
     </div>
 </template>
 <script>
