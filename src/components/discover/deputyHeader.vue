@@ -2,7 +2,7 @@
     <div id="deputy_header_discover">
         <ul>
           <li v-for="list in lists" :key="list.id">
-            <router-link :to="'/'+list.name" class="link">{{list.title}}</router-link>
+            <router-link :to="'/discover/'+list.name" class="link">{{list.title}}</router-link>
           </li>
         </ul>
     </div>

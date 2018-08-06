@@ -1,7 +1,7 @@
 <template>
     <div id="discover">
         <deputy-header></deputy-header>
-        {{$t("discover.discover")}}
+        <router-view></router-view>
     </div>
 </template>
 <script>
