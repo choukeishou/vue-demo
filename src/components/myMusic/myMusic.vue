@@ -1,6 +1,6 @@
 <template>
     <div id="myMusic">
-        {{message}}
+        {{message}}{{count}}
     </div>
 </template>
 <script>
@@ -9,6 +9,11 @@
         data(){
             return {
                 message:"这是我的音乐界面"
+            }
+        },
+        computed:{
+            count(){
+                return this.$store.state.count;
             }
         }
     }

@@ -15,7 +15,7 @@ export default new Router({
     },
     {//首页
       path: '/discover',
-      name: 'discover',
+      // name: 'discover',
       component: discover,
       children:[{
         path:'/',
